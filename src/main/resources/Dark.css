@@ -1,0 +1,30 @@
+.root {
+    -fx-background-color: rgb(60, 63, 65);
+    -fx-background-radius: 8;
+}
+.rightT {
+    -fx-background-radius: 0 8 0 0;
+}
+.rightD {
+    -fx-background-radius: 0 0 8 0;
+}
+.leftT {
+    -fx-background-radius: 0 8 0 0;
+}
+.leftD {
+    -fx-background-radius: 8 0 0 0;
+}
+.rootButtons {
+
+}
+.out {
+    -fx-background-color: rgb(50, 52, 54);
+    -fx-background-radius: 8;
+}
+.mouseEntered {
+    -fx-background-color: rgb(88, 91, 93);
+}
+.mouseExited {
+    -fx-background-color: rgb(60, 63, 65);
+}
+

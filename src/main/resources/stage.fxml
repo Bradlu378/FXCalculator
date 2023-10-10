@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="531.0" prefWidth="332.0" styleClass="root" stylesheets="@Dark.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calc.HelloController">
+   <children>
+      <AnchorPane layoutX="203.0" layoutY="-2.0">
+         <children>
+            <Pane fx:id="onpane1" layoutX="86.0" layoutY="2.0" onDragEntered="#ME" onDragExited="#MX" onMouseEntered="#ME" onMouseExited="#MX" prefHeight="30.0" prefWidth="42.0" styleClass="rightT">
+               <children>
+                  <ImageView layoutX="-2.0" layoutY="-2.0" onMouseReleased="#handleMouseReleased1" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@bruh.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="onpane2" layoutX="43.0" layoutY="1.0" onMouseEntered="#ME" onMouseExited="#MX" prefHeight="30.0" prefWidth="42.0">
+               <children>
+                  <ImageView layoutY="1.0" onMouseReleased="#handleMouseReleased2" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@shit.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="onpane3" layoutY="1.0" onMouseEntered="#ME" onMouseExited="#MX" prefHeight="30.0" prefWidth="42.0">
+               <children>
+                  <ImageView layoutY="1.0" onMouseReleased="#handleMouseReleased3" pickOnBounds="true" preserveRatio="true" smooth="false">
+                     <image>
+                        <Image url="@lol.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="-2.0" onMouseDragged="#handleMouseDragged" onMousePressed="#handleMousePressed" prefHeight="34.0" prefWidth="204.0" />
+      <Pane layoutX="15.0" layoutY="30.0" prefHeight="82.0" prefWidth="302.0" styleClass="out">
+         <children>
+            <Label fx:id="fieldd" alignment="CENTER_RIGHT" layoutX="9.0" layoutY="29.0" prefHeight="27.0" prefWidth="279.0" text="0.0" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <GridPane layoutX="17.0" layoutY="163.0" prefHeight="294.0" prefWidth="302.0" style="-fx-vgap: 10; -fx-hgap: 10;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Pane fx:id="n7" onMouseEntered="#ME" onMouseExited="#MX" onMouseReleased="#MRN" prefHeight="65.0" prefWidth="65.0" styleClass="out">
+               <children>
+                  <Label layoutX="27.0" layoutY="19.0" text="7" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="n8" onMouseEntered="#ME" onMouseExited="#MX" onMouseReleased="#MRN" prefHeight="65.0" prefWidth="65.0" styleClass="out" GridPane.columnIndex="1">
+               <children>
+                  <Label layoutX="27.0" layoutY="19.0" text="8" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="n9" onMouseEntered="#ME" onMouseExited="#MX" onMouseReleased="#MRN" prefHeight="65.0" prefWidth="65.0" styleClass="out" GridPane.columnIndex="2">
+               <children>
+                  <Label layoutX="27.0" layoutY="19.0" text="9" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="btnPlus" onMouseEntered="#ME" onMouseExited="#MX" onMouseReleased="#MRS" prefHeight="65.0" prefWidth="65.0" styleClass="out" GridPane.columnIndex="3">
+               <children>
+                  <Label layoutX="27.0" layoutY="19.0" text="+" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="n4" onMouseEntered="#ME" onMouseExited="#MX" onMouseReleased="#MRN" prefHeight="65.0" prefWidth="65.0" styleClass="out" GridPane.rowIndex="1">
+               <children>
+                  <Label layoutX="27.0" layoutY="19.0" text="4" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="n5" onMouseEntered="#ME" onMouseExited="#MX" onMouseReleased="#MRN" prefHeight="65.0" prefWidth="65.0" styleClass="out" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Label layoutX="27.0" layoutY="19.0" text="5" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="n6" onMouseEntered="#ME" onMouseExited="#MX" onMouseReleased="#MRN" prefHeight="65.0" prefWidth="65.0" styleClass="out" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <Label layoutX="27.0" layoutY="19.0" text="6" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="btnMinus" onMouseEntered="#ME" onMouseExited="#MX" onMouseReleased="#MRS" prefHeight="65.0" prefWidth="65.0" styleClass="out" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <children>
+                  <Label layoutX="30.0" layoutY="19.0" text="-" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="n1" onMouseEntered="#ME" onMouseExited="#MX" onMouseReleased="#MRN" prefHeight="65.0" prefWidth="65.0" styleClass="out" GridPane.rowIndex="2">
+               <children>
+                  <Label layoutX="27.0" layoutY="19.0" text="1" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="n2" onMouseEntered="#ME" onMouseExited="#MX" onMouseReleased="#MRN" prefHeight="65.0" prefWidth="65.0" styleClass="out" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <Label layoutX="27.0" layoutY="19.0" text="2" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="n3" onMouseEntered="#ME" onMouseExited="#MX" onMouseReleased="#MRN" prefHeight="65.0" prefWidth="65.0" styleClass="out" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <Label layoutX="27.0" layoutY="19.0" text="3" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="btnMultiply" onMouseEntered="#ME" onMouseExited="#MX" onMouseReleased="#MRS" prefHeight="65.0" prefWidth="65.0" styleClass="out" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <children>
+                  <Label layoutX="29.0" layoutY="19.0" text="*" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="btnClear" onMouseEntered="#ME" onMouseExited="#MX" onMouseReleased="#MRS" prefHeight="65.0" prefWidth="65.0" styleClass="out" GridPane.rowIndex="3">
+               <children>
+                  <Label layoutX="25.0" layoutY="19.0" text="C" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="n0" onMouseEntered="#ME" onMouseExited="#MX" onMouseReleased="#MRN" prefHeight="65.0" prefWidth="65.0" styleClass="out" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <Label layoutX="27.0" layoutY="19.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="btnEquals" onMouseEntered="#ME" onMouseExited="#MX" onMouseReleased="#MRS" prefHeight="65.0" prefWidth="65.0" styleClass="out" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <children>
+                  <Label layoutX="27.0" layoutY="19.0" text="=" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="btnDivide" onMouseEntered="#ME" onMouseExited="#MX" onMouseReleased="#MRS" prefHeight="65.0" prefWidth="65.0" styleClass="out" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <children>
+                  <Label layoutX="30.0" layoutY="19.0" text="/" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
